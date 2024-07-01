@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+}
+
+.title-logo {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    align-self: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    align-items: center;
+}
+
+ul li a {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+}
+
+ul li:hover a {
+    background-color: #5BC241;
+    color: white;
+}
+
+ul li .btn {
+    background-color: #5BC241;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px;
+    border-style: none;
+    color: white;
+    display: flex;
+    align-self: center;
+}
+
+ul li:hover .btn {
+    padding: 15px;
+    cursor: pointer;
+}
+
+@media(max-width:480px) {
+    .cabecalho {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-logo {
+        font-size: 30px;
+    }
+
+    .menu {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        width: 60%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .menu ul li a {
+        font-size: 40px;
+        font-weight: 500;
+        display: block;
+        width: 100%;
+    } 
+
+    ul li .btn {
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-size: 25px
+    }
+
+
+}
